@@ -23,4 +23,12 @@ public class main {
         m.put("test", "json test");
         return m;
     }
+
+    @RequestMapping(value="/newBranch")
+    public String getNewBranch() {
+        System.out.println("==============================");
+        System.out.println("main:: getNewBranch");
+
+        return "newBranch";
+    }
 }
